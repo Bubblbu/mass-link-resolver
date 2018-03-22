@@ -1,21 +1,19 @@
 # Mass Link Resolver
 
-Resolve DOIs (and other links) in parallel with nice update bars
-
-- *Input*
-
-    A list of IDs (e.g., DOI) or URLs
-
-- *Output*
-
-    Resolved URLs, resolve errors, response codes, timestamps
+Resolve DOIs (and other links) in parallel with a nice progress bar.
 
 ## Features
 
-- Resolves a column of DOIs in parallel and creates an output file with metadata
-- Define your own URL format if you're working with other IDs
-- Resolve a column of URLs if you're not using IDs
+- Resolve a list of DOIs in parallel and create an output file with metadata
+- Resolve a list of URLs if, e.g., resolve a list of shortened URLs
+- Define your own URL format if you're not resolving DOIs
 - Uses [tqdm](https://github.com/noamraph/tqdm) to display a fancy progress bar & ETA
+
+## To-Do
+
+- [ ] Properly set headers
+- [ ] Add option to switch between HEAD and GET requests (HEAD as default)
+- [ ] Add option to avoid hammering
 
 ## Usage
 
